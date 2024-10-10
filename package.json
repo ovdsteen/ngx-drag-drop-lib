@@ -1,5 +1,5 @@
 {
-  "name": "ngx-drag-drop",
+  "name": "ngx-drag-drop-fork",
   "version": "18.0.2",
   "description": "Angular directives using the native HTML Drag And Drop API",
   "repository": {
@@ -36,7 +36,7 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "module": "fesm2022/ngx-drag-drop.mjs",
+  "module": "fesm2022/ngx-drag-drop-fork.mjs",
   "typings": "index.d.ts",
   "exports": {
     "./package.json": {
@@ -44,9 +44,9 @@
     },
     ".": {
       "types": "./index.d.ts",
-      "esm2022": "./esm2022/ngx-drag-drop.mjs",
-      "esm": "./esm2022/ngx-drag-drop.mjs",
-      "default": "./fesm2022/ngx-drag-drop.mjs"
+      "esm2022": "./esm2022/ngx-drag-drop-fork.mjs",
+      "esm": "./esm2022/ngx-drag-drop-fork.mjs",
+      "default": "./fesm2022/ngx-drag-drop-fork.mjs"
     }
   },
   "sideEffects": false

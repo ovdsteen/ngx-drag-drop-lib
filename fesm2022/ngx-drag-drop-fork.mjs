@@ -732,4 +732,4 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.2.7", ngImpor
  */
 
 export { DndDragImageRefDirective, DndDraggableDirective, DndDropzoneDirective, DndHandleDirective, DndModule, DndPlaceholderRefDirective };
-//# sourceMappingURL=ngx-drag-drop.mjs.map
+//# sourceMappingURL=ngx-drag-drop-fork.mjs.map
