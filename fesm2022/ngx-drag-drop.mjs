@@ -1,5 +1,5 @@
 import * as i0 from '@angular/core';
-import { inject, forwardRef, ElementRef, Directive, EventEmitter, Renderer2, NgZone, Input, Output, HostBinding, HostListener, ContentChild, NgModule } from '@angular/core';
+import { inject, forwardRef, ElementRef, Directive, EventEmitter, Renderer2, NgZone, HostListener, Input, HostBinding, Output, ContentChild, NgModule } from '@angular/core';
 
 const DROP_EFFECTS = ['move', 'copy', 'link'];
 const CUSTOM_MIME_TYPE = 'application/x-dnd';
@@ -190,10 +190,10 @@ class DndDragImageRefDirective {
     ngOnInit() {
         this.dndDraggableDirective.registerDragImage(this.elementRef);
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.0.6", ngImport: i0, type: DndDragImageRefDirective, deps: [], target: i0.ɵɵFactoryTarget.Directive });
-    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "19.0.6", type: DndDragImageRefDirective, isStandalone: true, selector: "[dndDragImageRef]", ngImport: i0 });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.0.6", ngImport: i0, type: DndDragImageRefDirective, deps: [], target: i0.ɵɵFactoryTarget.Directive });
+    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "20.0.6", type: DndDragImageRefDirective, isStandalone: true, selector: "[dndDragImageRef]", ngImport: i0 });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.0.6", ngImport: i0, type: DndDragImageRefDirective, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.0.6", ngImport: i0, type: DndDragImageRefDirective, decorators: [{
             type: Directive,
             args: [{ selector: '[dndDragImageRef]', standalone: true }]
         }] });
@@ -332,10 +332,10 @@ class DndDraggableDirective {
             return this.elementRef.nativeElement;
         }
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.0.6", ngImport: i0, type: DndDraggableDirective, deps: [], target: i0.ɵɵFactoryTarget.Directive });
-    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "19.0.6", type: DndDraggableDirective, isStandalone: true, selector: "[dndDraggable]", inputs: { dndDraggable: "dndDraggable", dndEffectAllowed: "dndEffectAllowed", dndType: "dndType", dndDraggingClass: "dndDraggingClass", dndDraggingSourceClass: "dndDraggingSourceClass", dndDraggableDisabledClass: "dndDraggableDisabledClass", dndDragImageOffsetFunction: "dndDragImageOffsetFunction", dndDisableIf: "dndDisableIf", dndDisableDragIf: "dndDisableDragIf" }, outputs: { dndStart: "dndStart", dndDrag: "dndDrag", dndEnd: "dndEnd", dndMoved: "dndMoved", dndCopied: "dndCopied", dndLinked: "dndLinked", dndCanceled: "dndCanceled" }, host: { listeners: { "dragstart": "onDragStart($event)", "dragend": "onDragEnd($event)" }, properties: { "attr.draggable": "this.draggable" } }, ngImport: i0 });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.0.6", ngImport: i0, type: DndDraggableDirective, deps: [], target: i0.ɵɵFactoryTarget.Directive });
+    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "20.0.6", type: DndDraggableDirective, isStandalone: true, selector: "[dndDraggable]", inputs: { dndDraggable: "dndDraggable", dndEffectAllowed: "dndEffectAllowed", dndType: "dndType", dndDraggingClass: "dndDraggingClass", dndDraggingSourceClass: "dndDraggingSourceClass", dndDraggableDisabledClass: "dndDraggableDisabledClass", dndDragImageOffsetFunction: "dndDragImageOffsetFunction", dndDisableIf: "dndDisableIf", dndDisableDragIf: "dndDisableDragIf" }, outputs: { dndStart: "dndStart", dndDrag: "dndDrag", dndEnd: "dndEnd", dndMoved: "dndMoved", dndCopied: "dndCopied", dndLinked: "dndLinked", dndCanceled: "dndCanceled" }, host: { listeners: { "dragstart": "onDragStart($event)", "dragend": "onDragEnd($event)" }, properties: { "attr.draggable": "this.draggable" } }, ngImport: i0 });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.0.6", ngImport: i0, type: DndDraggableDirective, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.0.6", ngImport: i0, type: DndDraggableDirective, decorators: [{
             type: Directive,
             args: [{ selector: '[dndDraggable]', standalone: true }]
         }], propDecorators: { dndDraggable: [{
@@ -390,10 +390,10 @@ class DndPlaceholderRefDirective {
         // placeholder has to be "invisible" to the cursor, or it would interfere with the dragover detection for the same dropzone
         this.elementRef.nativeElement.style.pointerEvents = 'none';
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.0.6", ngImport: i0, type: DndPlaceholderRefDirective, deps: [{ token: i0.ElementRef }], target: i0.ɵɵFactoryTarget.Directive });
-    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "19.0.6", type: DndPlaceholderRefDirective, isStandalone: true, selector: "[dndPlaceholderRef]", ngImport: i0 });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.0.6", ngImport: i0, type: DndPlaceholderRefDirective, deps: [{ token: i0.ElementRef }], target: i0.ɵɵFactoryTarget.Directive });
+    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "20.0.6", type: DndPlaceholderRefDirective, isStandalone: true, selector: "[dndPlaceholderRef]", ngImport: i0 });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.0.6", ngImport: i0, type: DndPlaceholderRefDirective, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.0.6", ngImport: i0, type: DndPlaceholderRefDirective, decorators: [{
             type: Directive,
             args: [{ selector: '[dndPlaceholderRef]', standalone: true }]
         }], ctorParameters: () => [{ type: i0.ElementRef }] });
@@ -627,10 +627,10 @@ class DndDropzoneDirective {
         this.enterCount = 0;
         this.removePlaceholderFromDOM();
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.0.6", ngImport: i0, type: DndDropzoneDirective, deps: [{ token: i0.NgZone }, { token: i0.ElementRef }, { token: i0.Renderer2 }], target: i0.ɵɵFactoryTarget.Directive });
-    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "19.0.6", type: DndDropzoneDirective, isStandalone: true, selector: "[dndDropzone]", inputs: { dndDropzone: "dndDropzone", dndEffectAllowed: "dndEffectAllowed", dndAllowExternal: "dndAllowExternal", dndHorizontal: "dndHorizontal", dndDragoverClass: "dndDragoverClass", dndDropzoneDisabledClass: "dndDropzoneDisabledClass", dndDisableIf: "dndDisableIf", dndDisableDropIf: "dndDisableDropIf" }, outputs: { dndDragover: "dndDragover", dndDrop: "dndDrop" }, host: { listeners: { "drop": "onDrop($event)" } }, queries: [{ propertyName: "dndPlaceholderRef", first: true, predicate: DndPlaceholderRefDirective, descendants: true }], ngImport: i0 });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.0.6", ngImport: i0, type: DndDropzoneDirective, deps: [{ token: i0.NgZone }, { token: i0.ElementRef }, { token: i0.Renderer2 }], target: i0.ɵɵFactoryTarget.Directive });
+    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "20.0.6", type: DndDropzoneDirective, isStandalone: true, selector: "[dndDropzone]", inputs: { dndDropzone: "dndDropzone", dndEffectAllowed: "dndEffectAllowed", dndAllowExternal: "dndAllowExternal", dndHorizontal: "dndHorizontal", dndDragoverClass: "dndDragoverClass", dndDropzoneDisabledClass: "dndDropzoneDisabledClass", dndDisableIf: "dndDisableIf", dndDisableDropIf: "dndDisableDropIf" }, outputs: { dndDragover: "dndDragover", dndDrop: "dndDrop" }, host: { listeners: { "drop": "onDrop($event)" } }, queries: [{ propertyName: "dndPlaceholderRef", first: true, predicate: DndPlaceholderRefDirective, descendants: true }], ngImport: i0 });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.0.6", ngImport: i0, type: DndDropzoneDirective, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.0.6", ngImport: i0, type: DndDropzoneDirective, decorators: [{
             type: Directive,
             args: [{ selector: '[dndDropzone]', standalone: true }]
         }], ctorParameters: () => [{ type: i0.NgZone }, { type: i0.ElementRef }, { type: i0.Renderer2 }], propDecorators: { dndDropzone: [{
@@ -673,10 +673,10 @@ class DndHandleDirective {
     onDragEvent(event) {
         event._dndUsingHandle = true;
     }
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.0.6", ngImport: i0, type: DndHandleDirective, deps: [], target: i0.ɵɵFactoryTarget.Directive });
-    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "19.0.6", type: DndHandleDirective, isStandalone: true, selector: "[dndHandle]", host: { listeners: { "dragstart": "onDragEvent($event)", "dragend": "onDragEvent($event)" }, properties: { "attr.draggable": "this.draggable" } }, ngImport: i0 });
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.0.6", ngImport: i0, type: DndHandleDirective, deps: [], target: i0.ɵɵFactoryTarget.Directive });
+    static ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "20.0.6", type: DndHandleDirective, isStandalone: true, selector: "[dndHandle]", host: { listeners: { "dragstart": "onDragEvent($event)", "dragend": "onDragEvent($event)" }, properties: { "attr.draggable": "this.draggable" } }, ngImport: i0 });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.0.6", ngImport: i0, type: DndHandleDirective, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.0.6", ngImport: i0, type: DndHandleDirective, decorators: [{
             type: Directive,
             args: [{ selector: '[dndHandle]', standalone: true }]
         }], propDecorators: { draggable: [{
@@ -691,8 +691,8 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.0.6", ngImpor
             }] } });
 
 class DndModule {
-    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.0.6", ngImport: i0, type: DndModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
-    static ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "19.0.6", ngImport: i0, type: DndModule, imports: [DndDragImageRefDirective,
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.0.6", ngImport: i0, type: DndModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+    static ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "20.0.6", ngImport: i0, type: DndModule, imports: [DndDragImageRefDirective,
             DndDropzoneDirective,
             DndHandleDirective,
             DndPlaceholderRefDirective,
@@ -701,9 +701,9 @@ class DndModule {
             DndHandleDirective,
             DndPlaceholderRefDirective,
             DndDragImageRefDirective] });
-    static ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "19.0.6", ngImport: i0, type: DndModule });
+    static ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "20.0.6", ngImport: i0, type: DndModule });
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.0.6", ngImport: i0, type: DndModule, decorators: [{
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.0.6", ngImport: i0, type: DndModule, decorators: [{
             type: NgModule,
             args: [{
                     exports: [
